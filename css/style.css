@@ -1,0 +1,222 @@
+.modul-level {
+    width: auto;
+
+    background-color: antiquewhite;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}   
+
+.modul-head {
+    width: auto;
+    min-height: 150px;
+    background-color: lightpink;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.play-name {
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+    
+}
+
+.levels {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    background-color: lightyellow;
+    width: 605px;
+    margin: auto;
+    margin-bottom: 40px;
+    padding: 40px 50px 0 50px;
+}
+
+.level-label {
+    background-color: grey;
+    padding: 50px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+
+.level-label:nth-child(4n) {
+    margin-right: 0;
+}
+
+
+.control {
+    width: 610px;
+    display: flex;
+    justify-content: space-between;
+    background-color: lightskyblue;
+    padding: 50px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.hidden {
+    display: none;
+}
+
+
+.main-header {
+    background-color: #a27d62;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.main-navigation {
+    margin: 0;
+    padding: 0;
+    min-height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    font-size: 18px;
+    line-height: 20px;
+
+    background-color: #a27d62;
+}
+
+.menu-right,
+.menu-left,
+.menu-title{
+    margin: 0;
+    padding: 0;
+
+    width: 600px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    list-style: none;
+    word-break: break-all;
+}
+
+.main-navigation a {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 300px;
+    padding: 40px 0;
+
+    text-align: center;
+    text-decoration: none;
+    color: #45261c;
+
+}
+
+.play-name {
+    padding-top: 6px; 
+
+    font-size: 45px;
+    color: #45261c;
+}
+
+
+.main-navigation a:hover,
+.main-navigation a:focus {
+    color: #fad9cf;
+    background-color: #45261c;
+}
+
+.main-navigation a:active {
+    color: #fad9cf;
+    background-color: #45261c;
+    box-shadow: inset 0 -8px 50px 3px rgba(0, 0, 0, 0.5);
+    opacity: 0.5;
+    
+}
+
+.main-game-field {
+    display: flex;
+
+    width: auto;
+    padding: 30px 60px;
+    background-color: blanchedalmond;
+}
+
+.left-part {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1260px;
+    margin-right: 60px;
+    background-color: grey;
+}
+
+.game-field {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    width: 1260px;
+    box-sizing: border-box;
+    background-color: brown;
+    padding: 40px 50px;
+    margin-bottom: 30px;
+}
+
+.game-field input[type = "submit"] {
+    padding: 25px 27px;
+    font-size: 45px;
+
+}
+
+
+.game-statistic-field {
+    width: 600px;
+    height: 470px;
+    box-sizing: border-box;
+    background-color: green;
+}
+
+.game-version-field {
+    width: 860px;
+    min-height: 200px;
+    box-sizing: border-box;
+    background-color: orange;
+    text-align: center;
+    font-size: 60px;
+    padding: 25px 0;
+    margin-right: 60px;
+    margin-bottom: 30px;
+}
+
+.game-option-fild {
+    width: 340px;
+    min-height: 200px;
+    box-sizing: border-box;
+    background-color: olivedrab;
+    padding: 20px 20px 0 20px; 
+    margin-bottom: 30px;
+
+}
+
+.game-option-fild .button {
+    width: 138px;
+    min-height: 70px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+
+.game-option-fild .button:nth-child(even){
+    margin-right: 0;
+}
+
+
+
+.game-result-field {
+    width: 1200px;
+    min-height: 300px;
+    background-color: lightslategray;
+    padding: 40px;
+}

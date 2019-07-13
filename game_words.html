@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset = "utf-8">
+    <title>Игра "Слова".</title>
+    <link rel= "shortcut icon" href = "" type = "image/x-icon">
+    <link href = "css/normalize.css" rel = "stylesheet">
+    <link href = "css/style.css" rel = "stylesheet">
+
+</head>
+<body>
+    <header class = "main-header">
+        <div class  = "container">
+                <nav class = "main-navigation">
+                    <ul class = "menu-left">
+                        <li><a class = "rules" href = "#">Правила игры</a></li>
+                        <li><a class = "game-level" href = "#">Выбрать уровень</a></li> 
+                    </ul>
+                    <div class = "menu-title">
+                        <h1 class = "play-name">Игра в слова</h1>
+                    </div>
+                    <ul class = "menu-right">   
+                        <li><a class = "" href = "game_words.html">Новая игра</a></li>
+                        <li><a class = "" href = "#">Вернуться на главную</a></li>
+                    </ul>
+                </nav>    
+            </div> 
+    </header>
+
+    <div class = "main-game-field">
+        <div class = "left-part">
+            <div class = "game-field"></div>
+            <div class = "game-version-field"></div>
+            <div class = "game-option-fild">
+                <button class = "button erase-letter" type = "button">Стереть букву</button>
+                <button class = "button erase-all" type = "button">Стереть все</button>
+                <button class = "button help-definition" type = "button">Подсказка: определение слова</button>
+                <button class = "button help-all-word" type = "button">Подсказка: показать все слово</button>
+            </div>
+            <div class = "game-result-field"></div>
+        </div>
+        <div class = "game-statistic-field">
+            <p>Отгадано слов: <span class = "count-answer-word"></span></p>
+            <p>Осталось отгадать: <span class = "count-quest-word"></span></p>
+            <p>Использовано подсказок: <span class = "count-help"></span></p>
+            <p>Накоплено очков: <span class = "points"></span></p>
+        </div>
+    </div>
+
+
+
+
+
+    <div class = "modul-level">
+        <div class = "modul-head">
+            <h1 class = "play-name">Игра в слова</h1>
+        </div>
+        <div class = "levels">
+            <label class = "level-label"><input class = "level" type = "radio" name = "level">1</label>
+            <label class = "level-label"><input class = "level" type = "radio" name = "level">2</label>
+            <label class = "level-label"><input class = "level" type = "radio" name = "level">3</label>
+            <!-- <label class = "level-label"><input class = "level" type = "radio" name = "level">4</label>
+            <label class = "level-label"><input class = "level" type = "radio" name = "level">5</label>
+            <label class = "level-label"><input class = "level" type = "radio" name = "level">6</label>
+            <label class = "level-label"><input class = "level" type = "radio" name = "level">7</label>
+            <label class = "level-label"><input class = "level" type = "radio" name = "level">8</label>
+            <label class = "level-label"><input class = "level" type = "radio" name = "level">9</label>
+            <label class = "level-label"><input class = "level" type = "radio" name = "level">0</label>
+            <label class = "level-label"><input class = "level" type = "radio" name = "level">1</label>
+            <label class = "level-label"><input class = "level" type = "radio" name = "level">2</label> -->
+            
+        </div>   
+        
+        <div class = "control">
+            <button class = "button rules">Правила игры</button>
+            <button class = "button go-main-page">Вернуться на главную</button>
+        </div>
+        
+    </div>
+
+    <script src = "js/1.js" defer></script>
+</body>
+</html> 
+
