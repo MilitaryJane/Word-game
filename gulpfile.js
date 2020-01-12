@@ -146,23 +146,27 @@ gulp.task('clean', function () {
 
 
 gulp.task('prebuild', async function () {
-    var buildCss = gulp.src([
-            'src/css/styles.css',
-            'src/css/styles.min.css',
+    const buildCss = gulp.src([
+            'src/css/style.css',
+            // 'src/css/styles.css',
+            // 'src/css/styles.min.css',
             'src/css/normalize.css'
         ])
         .pipe(gulp.dest('dist/css'));
 
-    var buildImage = gulp.src('src/img/**/*.{jpg,jpeg,png,svg,webp}')
+    const buildImage = gulp.src('src/img/**/*.{jpg,jpeg,png,svg,webp}')
         .pipe(gulp.dest('dist/img'))
 
-    var buildFonts = gulp.src('src/fonts/**/*')
+    const buildFonts = gulp.src('src/fonts/**/*')
         .pipe(gulp.dest('dist/fonts'))
 
-    var buildJs = gulp.src('src/js/**/*')
+    const buildJs = gulp.src('src/js/**/*')
         .pipe(gulp.dest('dist/js'));
 
-    var buildHtml = gulp.src('src/*.html')
+    const buildData = gulp.src('src/data/**/*')
+        .pipe(gulp.dest('dist/data'));
+
+    const buildHtml = gulp.src('src/*.html')
         .pipe(gulp.dest("dist"));
 
 
