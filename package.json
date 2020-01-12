@@ -1,0 +1,44 @@
+{
+  "name": "game-words",
+  "version": "1.0.0",
+  "description": "https://militaryjane.github.io/Panteon/",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "core-js": "^3.4.8"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.5",
+    "@babel/plugin-transform-runtime": "^7.7.6",
+    "@babel/preset-env": "^7.7.6",
+    "babel-loader": "^8.0.6",
+    "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
+    "gh-pages": "^2.1.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-imagemin": "^6.2.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-svgstore": "^7.0.1",
+    "gulp-webp": "^4.0.1",
+    "path": "^0.12.7",
+    "webpack": "^4.41.2",
+    "webpack-stream": "^5.2.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MilitaryJane/Word-game.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MilitaryJane/Word-game/issues"
+  },
+  "homepage": "https://github.com/MilitaryJane/Word-game#readme"
+}

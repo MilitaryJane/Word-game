@@ -1,3 +1,36 @@
+.modul-sign {
+    width: auto;
+
+    background-color: antiquewhite;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 104;
+} 
+
+.modul-sign-hide {
+    display: none;
+}
+
+.modul-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(255, 255, 250, 0.6);
+    z-index: 103;
+    display: block;
+}
+
+.modul-overlay-hide {
+    display: none;
+}
+
 .modul-level {
     width: auto;
 
@@ -219,4 +252,10 @@
     min-height: 300px;
     background-color: lightslategray;
     padding: 40px;
+}
+
+.player {
+    display: block;
+    width: 200px;
+    height: 20px;
 }
