@@ -18,7 +18,7 @@ let currentLevel;
 let lvls = [];
 let isComplete = false;
 
-const REQUEST_URL = '/data';
+const REQUEST_URL = './data';
 
 
 
