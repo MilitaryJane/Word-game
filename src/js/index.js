@@ -153,7 +153,7 @@ function getResult(string) {
 }
 
 function getDefinition(key) {
-    fetch('../data/vocabulary.json')
+    fetch('./data/vocabulary.json')
         .then(response => {
             if(response.ok) {
                 response.json()
