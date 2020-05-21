@@ -341,6 +341,7 @@ function checkLvlOnClose() {
         if (localStorage[`level${i}`]) {
             if (JSON.parse(localStorage[`level${i}`]).isComplete) {
                 count++;
+                levelsButton[count].disabled = false;
             }
         }
     }
