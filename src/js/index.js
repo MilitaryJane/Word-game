@@ -52,6 +52,7 @@ for (let i = 0; i < levelsButton.length; i++) {
                     
                             };
                             currentResponseArray = evt.target.arrayNewWords;  
+                            console.log(`Задан текущий массив ответов - ${currentResponseArray}`);
 
                             dataUpdating();
                             staticticsUpdating();
@@ -74,26 +75,22 @@ gameField.addEventListener('click', function(evt) {
         
     }
     if(checkIt(gameVersionField.textContent)) {
-        getResult(gameVersionField.textContent);
-        
-
-        (function(str){
-            for (let i = 0; i < currentResponseArray.length; i++) {
-                if(str.toLowerCase() == currentResponseArray[i]){
-                    currentResponseArray.splice(i--, 1);
-                    getPoints(str);
-                }
-                if(currentResponseArray.length == 0) {
-                    alert('Поздравляем! Все слова на этом уровне отгаданы!'); // тут нужно сделать попап 
-                    isComplete = true;
-                } 
-            }
-        })(gameVersionField.textContent);
-        
+            let str = gameVersionField.textContent;
+        getResult(str);
+        getPoints(str);
+        isVictory();
         eraseAll();
         count();
     }
 });
+
+
+function isVictory() {
+    if(currentResponseArray.length == 0) {
+        alert('Поздравляем! Все слова на этом уровне отгаданы!'); // тут нужно сделать попап 
+        isComplete = true;
+    } 
+}
 
 
 let buttonEraseLetter = document.querySelector('.erase-letter');
@@ -138,10 +135,11 @@ function notDisabledAll() {
 }
      
 
-// функация проверяет существование введенного слова
+// функция проверяет существование введенного слова
 function checkIt(str) {
     for (let i = 0; i < currentResponseArray.length; i++) {
         if(str.toLowerCase() == currentResponseArray[i]){
+            currentResponseArray.splice(i--, 1);
             return true;
         }
     }
@@ -171,6 +169,7 @@ function getDefinition(key) {
 function getHelpAllWord() {
     if(scoringPoints(POINTS_HELP_ALL_WORD)) {
         getResult(getRandomElement(currentResponseArray));
+        isVictory();
         statistics.helpCount++;
         count();
     }
